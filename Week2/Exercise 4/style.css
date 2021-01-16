@@ -1,0 +1,22 @@
+body {
+    background-color: lavenderblush;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: grey;
+}
+
+#mainheader {
+    font-size: larger;
+    color: lawngreen;
+}
+
+.header-style {
+    color: green;
+}
+
+.tableheading {
+    font-size: large;
+    color: greenyellow;
+}
