@@ -20,3 +20,7 @@ p {
     font-size: large;
     color: greenyellow;
 }
+
+.error-message {
+    color: red;
+}

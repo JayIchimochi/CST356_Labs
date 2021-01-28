@@ -4,7 +4,7 @@ function validate() {
     document.getElementById('password-error').style.visibility = 'hidden';
 
     let username = document.getElementById('username').value;
-    let password = document.getElementById('last-name').value;
+    let password = document.getElementById('password').value;
 
     console.debug('username: ' + username);
 
