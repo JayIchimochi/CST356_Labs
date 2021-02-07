@@ -7,7 +7,12 @@
         <!-- inject:css -->
         <!-- endinject -->
 
+        <!--removeIf(production)-->
+        <script src="scripts/login.js"></script>
+        <!--endRemoveIf(production)-->
         
+        <!-- inject:js -->
+        <!-- endinject -->
     </head>
     <body>
         <form>
@@ -23,12 +28,5 @@
 
             <input type="button" value="Login" onclick="validate()">
         </form>
-
-        <!--removeIf(production)-->
-        <script src="scripts/login.js"></script>
-        <!--endRemoveIf(production)-->
-        
-        <!-- inject:js -->
-        <!-- endinject -->
     </body>
 </html>

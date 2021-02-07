@@ -7,7 +7,12 @@
         <!-- inject:css -->
         <!-- endinject -->
 
+        <!--removeIf(production)-->
+        <script src="scripts/students.js"></script>
+        <!--endRemoveIf(production)-->
         
+        <!-- inject:js -->
+        <!-- endinject -->
     </head>
     <body>
         <h1>Student Table</h1>
@@ -17,12 +22,5 @@
         </table>
 
         <script>initializeStudents()</script>
-
-        <!--removeIf(production)-->
-        <script src="scripts/students.js"></script>
-        <!--endRemoveIf(production)-->
-        
-        <!-- inject:js -->
-        <!-- endinject -->
     </body>
 </html>
