@@ -1,0 +1,30 @@
+<html>
+    <head>
+        
+
+        <!-- inject:css -->
+        <link rel="stylesheet" href="styles/app.min.css">
+        <!-- endinject -->
+
+        
+        
+        <!-- inject:js -->
+        <script src="scripts/app.min.js"></script>
+        <!-- endinject -->
+    </head>
+    <body>
+        <form>
+            <label for="username">User Name: </label>
+            <input type="text" id="username">
+            <span id="username-error" class="error-message" style="visibility: hidden;">Please input a username</span>
+            <br>
+
+            <label for="password">Password: </label>
+            <input type="text" id="password">
+            <span id="password-error" class="error-message" style="visibility: hidden;">Please input a password</span>
+            <br>
+
+            <input type="button" value="Login" onclick="validate()">
+        </form>
+    </body>
+</html>
