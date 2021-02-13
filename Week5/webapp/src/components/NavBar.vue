@@ -1,8 +1,8 @@
 <template>
     <div class="links">
         <span v-on:click='goToHome'>Home</span>
-        <span v-on:click='goToTables'>Table Example</span>
-        <span v-on:click='goToForms'>Form Example</span>
+        <span v-on:click='goToStudents'>Students</span>
+        <span v-on:click='goToInstructors'>Instructors</span>
     </div>
 </template>
 
@@ -13,11 +13,11 @@
       goToHome: function() {
         this.$router.push({ path: 'home' })
       },
-      goToTables: function() {
-        this.$router.push({ path: 'tables' })
+      goToStudents: function() {
+        this.$router.push({ path: 'students' })
       },
-      goToForms: function() {
-        this.$router.push({ path: 'forms' })
+      goToInstructors: function() {
+        this.$router.push({ path: 'instructors' })
       }
     }
   }

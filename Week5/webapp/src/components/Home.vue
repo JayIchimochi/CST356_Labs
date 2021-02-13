@@ -40,7 +40,8 @@ export default {
 <style scoped>
 p {
     font-family: 'Courier New', Courier, monospace;
-    background-color: grey;
+    background-color: darkgrey;
+    color: whitesmoke;
 }
 
 #mainheader {
