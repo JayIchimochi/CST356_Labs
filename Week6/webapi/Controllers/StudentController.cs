@@ -63,9 +63,8 @@ namespace webapi.Controllers
                 return NotFound();
             }
 
-            existingStudent.FirstName = student.FirstName;
-            existingStudent.LastName = student.LastName;
-            existingStudent.GPA = student.GPA;
+            existingStudent.StudentID = student.Id;
+            existingStudent.EmailAddress = student.EmailAddress;
 
             return NoContent();
         }

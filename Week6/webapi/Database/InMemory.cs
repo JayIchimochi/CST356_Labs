@@ -6,27 +6,32 @@ namespace Database
     {
         public static List<Student> Students = new List<Student> {
             new Student {
-                Id = 123423131,
+                Id = 1,
+                StudentID = 123423131,
                 EmailAddress = "Jerry@gmail.com"
             },
             new Student {
-                Id = 928394058,
+                Id = 2,
+                StudentID = 938456279,
                 EmailAddress = "Mary@live.com"
             }
         };
 
-        public static List<Instructor> instructors = new List<Instructor> {
+        public static List<Instructor> Instructors = new List<Instructor> {
             new Instructor{
+                Id = 1,
                 FirstName = "John",
                 MiddleInital = "H.",
                 LastName = "Smith",
             },
             new Instructor{
+                Id = 2,
                 FirstName = "Laura",
                 MiddleInital = "S.",
                 LastName = "Tatter",
             },
             new Instructor{
+                Id = 3,
                 FirstName = "Issac",
                 MiddleInital = "C.",
                 LastName = "Clark",
