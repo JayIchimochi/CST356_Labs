@@ -12,7 +12,7 @@ services:
 
   webapi:
     build: ./webapi
-    image: oitgaden/webapi
+    image: jayichimochi/webapi
     container_name: webapi
     ports:
      - "8081:80"
