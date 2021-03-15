@@ -12,7 +12,7 @@
                 <tbody>
                     <tr v-for="student in students" :key="student.studentId">
                         <td>{{ student.studentId }}</td>
-                        <td>{{ student.address }}</td>
+                        <td>{{ student.email }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -30,7 +30,7 @@
                 students: [],
                 operation: 'list',
                 studentId: undefined,
-                address: undefined,
+                email: undefined,
                 apiServer: process.env.VUE_APP_API_SERVER
             }
         },
