@@ -1,13 +1,13 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Database;
-using System;
 
 public class StudentRepository : IStudentRepository
 {
-    private readonly dbContext _dbContext;
+    private readonly SchoolContext _dbContext;
 
-    public StudentRepository(dbContext dbContext)
+    public StudentRepository(SchoolContext dbContext)
     {
         _dbContext = dbContext;
     }
