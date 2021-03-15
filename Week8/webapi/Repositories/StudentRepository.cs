@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Extensions.Logging;
 using Database;
 using System;
 
@@ -21,8 +20,6 @@ public class StudentRepository : IStudentRepository
         } 
         catch(Exception ex)
         {
-            _logger.LogError("Failed to get Students.", ex);
-            
             return new List<Student>();
         }
     }

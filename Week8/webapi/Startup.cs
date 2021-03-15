@@ -7,6 +7,8 @@ using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using Database;
+using System.Collections.Generic;
+using System;
 
 namespace webapi
 {
