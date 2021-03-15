@@ -19,6 +19,7 @@ public class StudentService : IStudentService
             StudentViewModels.Add(new StudentModel {
                 StudentId = Student.StudentId,
                 Email = Student.address,
+                Special = BusinessRules.isSpecial(Student)
             });
         }
 

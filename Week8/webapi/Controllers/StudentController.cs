@@ -12,18 +12,17 @@ namespace webapi.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        private readonly SchoolContext _dbcontext;
+        private readonly IStudentService _studentservice;
 
-        public StudentController(SchoolContext context)
+        public StudentController(IStudentService studentservice)
         {
-            _dbcontext = context;
+            _studentservice = studentservice;
         }
 
         [HttpGet]
         public ActionResult<List<Student>> GetAllStudents()
         {
-            var result = _dbcontext.Student.ToList();
-            return Ok(result);
+            return Ok(_studentservice.GetAllStudents());
         }
     }
 }

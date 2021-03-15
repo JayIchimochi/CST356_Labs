@@ -32,6 +32,8 @@ namespace webapi
             
             services.AddDbContext<SchoolContext>(options =>
                 options.UseNpgsql(Configuration.GetConnectionString("SchoolDatabase")));
+
+            RegisterApplicationServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,6 +65,11 @@ namespace webapi
             {
                 endpoints.MapControllers();
             });
+        }
+        private void RegisterApplicationServices(IServiceCollection services)
+        {
+            services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<IStudentService, StudentService>();
         }
     }
 }
